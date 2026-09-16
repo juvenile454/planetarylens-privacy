@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://juvenile454.github.io/planetarylens-privacy/sitemap.xml

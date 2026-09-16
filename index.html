@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Privacy Policy and Datenschutzerklärung for PlanetaryLens 0.9.">
+  <title>PlanetaryLens – Privacy Policy / Datenschutzerklärung</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { margin: 0; background: #010b1f; color: #e4f9ff; line-height: 1.62; }
+    main { max-width: 820px; margin: 0 auto; padding: 40px 22px 72px; }
+    h1, h2 { line-height: 1.2; }
+    h1 { margin-bottom: 8px; }
+    h2 { margin-top: 34px; color: #b9dcff; }
+    a { color: #7fc9ff; }
+    .meta, .note { color: #aebfd8; }
+    .language { margin-top: 56px; padding-top: 38px; border-top: 1px solid #294565; }
+    code { color: #b9dcff; }
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="Language selection"><a href="#english" lang="en">English</a> · <a href="#deutsch" lang="de">Deutsch</a></nav>
+  <section id="english" lang="en">
+    <h1>PlanetaryLens – Privacy Policy</h1>
+    <p class="meta">Applies to PlanetaryLens 0.9 (<code>de.timo.planetarylens</code>) · Effective: 16 September 2026</p>
+    <p><strong>Developer and data controller:</strong> Timo Lopetuso</p>
+    <p><strong>Privacy and support contact:</strong> <a href="mailto:PlanetaryLens@web.de">PlanetaryLens@web.de</a></p>
+
+    <h2>Summary</h2>
+    <p>PlanetaryLens displays Earth observations, camera stills, timelapses and wildlife photos. It has no accounts, advertising, analytics or crash-reporting SDKs. We do not create usage profiles or run a user database.</p>
+    <p>The app does not request location or camera permission. Searches, saved sources and device location are not sent to providers. Visible previews can already contact image providers, including on the start screen. World layers contact public measurement services. Network requests still disclose connection data: each service technically receives the IP address, request time, requested resource and PlanetaryLens User-Agent and may log that data.</p>
+
+    <h2>Permissions and purposes</h2>
+    <ul>
+      <li><strong>Internet:</strong> used to load public images, observation feeds and, when a source-control URL is configured, a small HTTPS control file.</li>
+    </ul>
+    <p>PlanetaryLens requests neither location, camera, storage nor media permissions, and it does not request background location.</p>
+
+    <h2>Network services and transmitted data</h2>
+    <p>Displaying previews in Discover and Catalog can connect to image providers as soon as a preview is visible. Opening a source loads its image; current camera images can refresh while visible. Clips and timelapses start only when you tap play. Switching to World loads the enabled measurement layers; switching them off, leaving World or putting the app in the background stops polling. An in-flight request can finish within its network timeout.</p>
+    <ul>
+      <li><strong>Media:</strong> U.S. Geological Survey (USGS NIMS/HIVIS and the Hawaiian, Alaska, Cascades and Yellowstone Volcano Observatories, including USGS Amazon S3 and volcview.wr.usgs.gov image delivery); PhenoCam Network / Northern Arizona University; GeoNet / Earth Sciences New Zealand; iNaturalist Open Data through Amazon S3. Provider attribution and source/rights links appear in every detail view.</li>
+      <li><strong>World layers:</strong> USGS for earthquakes; NOAA NDBC and PacIOOS / University of Hawaiʻi for buoy measurements and wave models; NOAA Aviation Weather Center for wind; GitHub for the prepared NASA FIRMS fire feed; NOAA CO-OPS, USGS Water Services, PEGELONLINE / German Federal Waterways and Shipping Administration, Environment and Climate Change Canada, Environment Agency (England), and Hub’Eau / Eaufrance for water levels.</li>
+    </ul>
+    <p>Fire data use a fixed public GitHub URL. The NASA preparation job receives no requests from your phone; its API key is never included in the app. The globe texture, borders and capitals are bundled locally and do not contact a map or tile service. Source locations identify the observation site, not your phone.</p>
+    <p>All connections use HTTPS. Services technically receive the IP address, request time, requested resource and User-Agent <code>PlanetaryLens/0.9 (Android; direct provider media)</code>. These requests contain no advertising ID, installation ID, account ID, GPS position, search text or saved list. The selected resource can reveal which content you are viewing. The app does not intentionally set cookies or send browser cookies. PlanetaryLens has no advertising, account, analytics or crash-reporting SDK and does not sell data.</p>
+
+    <h2>Logging by external providers</h2>
+    <p>PlanetaryLens does not store this network metadata itself. The providers operate their own servers and may retain requests under their policies. PlanetaryLens cannot access or delete these logs and does not control their retention. GitHub describes deriving a general geographic region from IP addresses; PlanetaryLens itself does not calculate your location. More information: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
+
+    <h2>Local storage, retention and deletion</h2>
+    <p>Saved sources are stored as catalog IDs in private app storage. Searches, map selections and the current screen are processed locally; Android may retain screen state to restore the app. Your primary device language is read locally: German selects German, every other language selects English. It is not sent as a user preference.</p>
+    <p>If a source-control URL is configured, the most recently downloaded manifest is stored locally. It contains source IDs, provider names and public notices, not user identifiers. It is replaced after a successful refresh. No source-control URL is configured in PlanetaryLens 0.9, so this file is not requested or stored.</p>
+    <p>App cloud backup and device-transfer backup are disabled. Images, video buffers and observation feeds are held in memory without a persistent media cache. Closing a view releases its media; Android manages final memory reclamation.</p>
+    <p>Remove saved items with the star or clear the saved list under About. To remove all local data, use Android Settings → Apps → PlanetaryLens → Storage → Clear data, or uninstall the app. This does not delete provider logs. There is no PlanetaryLens account or server-side PlanetaryLens user database.</p>
+
+    <h2>Source controls</h2>
+    <p>When a manifest URL is configured, the app requests a small HTTPS file on entering the foreground and about every 15 minutes while in the foreground. It can remove sources and show notices, without downloading executable code or adding sources. The host would receive the connection data described above. Offline, the last valid file would continue to apply; immediate removal on an offline device cannot be guaranteed. PlanetaryLens 0.9 does not configure this URL.</p>
+    <p>Viewing this policy inside the app works offline. Opening its public web version contacts GitHub Pages through your browser.</p>
+
+    <h2>Purposes and legal bases</h2>
+    <p>We process local settings and connection data to provide the app functions you use (Article 6(1)(b) GDPR where necessary to provide the requested service). Secure delivery, abuse prevention, source controls and handling rights complaints serve our legitimate interests in operating a reliable and lawful service (Article 6(1)(f) GDPR). We do not use these data for advertising or profiling. Independent providers determine the legal bases for their own operations; their policies apply to their server logs and websites.</p>
+    <p>If you contact us by email, we receive your address, message and information you choose to attach. We use these to answer your request or handle a rights complaint. Contract-related requests rely on Article 6(1)(b), other support and complaints on Article 6(1)(f), and legally required records on Article 6(1)(c). Do not include unnecessary sensitive data. Correspondence is deleted after the request is resolved and no longer needed, unless an applicable retention duty or a legal dispute requires continued storage.</p>
+
+    <h2>International processing</h2>
+    <p>Direct requests can be processed outside your country, including the United States, Canada and New Zealand, by the providers and their infrastructure. This may involve different data-protection rules. This privacy page is hosted by GitHub, Inc. in the United States.</p>
+
+    <h2>Your rights</h2>
+    <p>Subject to the applicable legal conditions, you may request access, correction, erasure, restriction and portability of your personal data. You may object to processing based on legitimate interests and complain to a data-protection supervisory authority, particularly where you live or work. Contact our privacy address above. We do not need additional identifying information merely to create a record about you. For data controlled independently by a provider, its privacy contact can handle the request; we can help identify the relevant provider.</p>
+
+    <h2>Children's privacy</h2>
+    <p>PlanetaryLens is intended for a general audience interested in Earth observations and is not specifically directed at children. There is no account, advertising, user upload, chat or communication between users. If a minor uses the app, the same data handling described above applies; no age-related profiling takes place. We do not perform automated decisions with legal or similarly significant effects.</p>
+    <p>Provider pages and email links open an external app. That app and the destination service have their own privacy practices.</p>
+
+    <h2>Changes</h2>
+    <p>If data handling, permissions or network services change, this policy will be updated together with the app. The version above identifies the app release covered by the policy.</p>
+
+    <h2>Hosting of this page</h2>
+    <p>This static privacy policy is provided through GitHub Pages, a service of GitHub, Inc. When the page is requested, GitHub technically processes necessary connection data such as the IP address, request time and browser information to deliver and secure the page. PlanetaryLens uses no first-party cookies, analytics, external fonts or external scripts on this page. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a> for more information.</p>
+  </section>
+
+  <section id="deutsch" class="language" lang="de">
+    <h1>PlanetaryLens – Datenschutzerklärung</h1>
+    <p class="meta">Gültig für PlanetaryLens 0.9 (<code>de.timo.planetarylens</code>) · Stand: 16. September 2026</p>
+    <p><strong>Entwickler und Verantwortlicher:</strong> Timo Lopetuso</p>
+    <p><strong>Datenschutz- und Supportkontakt:</strong> <a href="mailto:PlanetaryLens@web.de">PlanetaryLens@web.de</a></p>
+
+    <h2>Kurzfassung</h2>
+    <p>PlanetaryLens zeigt Erdbeobachtungen, Kameraeinzelbilder, Zeitraffer und Tierfotos. Es gibt keine Konten, Werbung, Analyse- oder Absturzbericht-SDKs. Wir erstellen keine Nutzungsprofile und betreiben keine Nutzerdatenbank.</p>
+    <p>Die App fordert keine Standort- oder Kameraberechtigung an. Suchtexte, Merkliste und Gerätestandort werden nicht an Betreiber gesendet. Sichtbare Vorschaubilder können bereits eine Verbindung zum Bildanbieter auslösen, auch auf der Startseite. Die Weltebenen kontaktieren öffentliche Messdienste. Beim Laden von Inhalten erhalten die ausliefernden Dienste dennoch technische Verbindungsdaten: IP-Adresse, Abrufzeit, angeforderte Ressource und PlanetaryLens-User-Agent, und können diese Angaben protokollieren.</p>
+
+    <h2>Berechtigungen und Zwecke</h2>
+    <ul>
+      <li><strong>Internet:</strong> Abruf öffentlicher Bilder, Messdaten und, sofern eine Quellen-Manifest-URL konfiguriert ist, einer kleinen HTTPS-Steuerdatei.</li>
+    </ul>
+    <p>PlanetaryLens fordert keine Standort-, Kamera-, Speicher- oder Medienberechtigung und keine Hintergrundortung an.</p>
+
+    <h2>Netzwerkdienste und übertragene Daten</h2>
+    <p>Sichtbare Vorschaubilder in „Entdecken“ und „Katalog“ können bereits beim Anzeigen eine Verbindung zum Bildanbieter auslösen. Eine Quelldetailansicht lädt ihr Bild; aktuelle Kamerabilder können sich bei sichtbarer Ansicht aktualisieren. Clips und Zeitraffer starten erst nach Antippen der Wiedergabe. „Welt“ lädt die eingeschalteten Messebenen. Ausschalten einer Ebene, Verlassen von „Welt“ oder der Wechsel in den Hintergrund beendet das regelmäßige Nachladen. Ein laufender Abruf kann innerhalb seines Netzwerk-Zeitlimits noch zu Ende gehen.</p>
+    <ul>
+      <li><strong>Medien:</strong> U.S. Geological Survey (USGS NIMS/HIVIS sowie Hawaiian, Alaska, Cascades und Yellowstone Volcano Observatory, einschließlich USGS-Bildauslieferung über Amazon S3 und volcview.wr.usgs.gov); PhenoCam Network / Northern Arizona University; GeoNet / Earth Sciences New Zealand; iNaturalist Open Data über Amazon S3. Attribution sowie Quellen- und Lizenzlinks stehen in jeder Detailansicht.</li>
+      <li><strong>Weltebenen:</strong> USGS für Beben; NOAA NDBC und PacIOOS / University of Hawaiʻi für Bojen und Wellenmodelle; NOAA Aviation Weather Center für Wind; GitHub für den aufbereiteten NASA-FIRMS-Feuerfeed; NOAA CO-OPS, USGS Water Services, PEGELONLINE / Wasserstraßen- und Schifffahrtsverwaltung des Bundes, Environment and Climate Change Canada, Environment Agency (England) und Hub’Eau / Eaufrance für Wasserpegel.</li>
+    </ul>
+    <p>Der Feuerfeed nutzt eine feste öffentliche GitHub-URL. Der NASA-Datenjob erhält keine Anfragen vom Handy; sein API-Schlüssel ist nie Bestandteil der App. Erdtextur, Grenzen und Hauptstädte liegen lokal in der App und kontaktieren keinen Karten- oder Kacheldienst. Quellenkoordinaten bezeichnen Beobachtungsorte, nicht deinen Gerätestandort.</p>
+    <p>Alle Verbindungen nutzen HTTPS. Die Dienste erhalten technisch IP-Adresse, Abrufzeit, angeforderte Ressource und den User-Agent <code>PlanetaryLens/0.9 (Android; direct provider media)</code>. Die Anfragen enthalten keine Werbe-, Installations- oder Kontokennung, GPS-Position, Suchtexte oder Merkliste. Die angeforderte Ressource kann erkennen lassen, welchen Inhalt du ansiehst. Die App setzt nicht absichtlich Cookies und sendet keine Browser-Cookies. PlanetaryLens enthält keine Werbung, kein Konto, keine Analyse- oder Crash-SDKs und verkauft keine Daten.</p>
+
+    <h2>Protokollierung durch externe Anbieter</h2>
+    <p>PlanetaryLens speichert diese Netzwerkmetadaten nicht selbst. Die Anbieter betreiben jedoch eigene Server und können Anfragen nach ihren Regeln aufbewahren. PlanetaryLens hat keinen Zugriff auf diese Protokolle, kontrolliert ihre Speicherdauer nicht und kann sie nicht löschen. GitHub beschreibt in seiner Datenschutzerklärung die Ableitung einer ungefähren Region aus IP-Adressen; PlanetaryLens selbst berechnet deinen Standort nicht. Weitere Informationen: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p>
+
+    <h2>Lokale Speicherung, Aufbewahrung und Löschung</h2>
+    <p>Die Merkliste speichert Katalog-IDs im privaten App-Speicher. Suche, Kartenauswahl und aktuelle Ansicht werden lokal verarbeitet; Android kann den Bildschirmzustand zur Wiederherstellung vorhalten. Die primäre Gerätesprache wird lokal gelesen: Bei Deutsch erscheint Deutsch, bei jeder anderen Sprache Englisch. Diese Einstellung wird nicht als Nutzerpräferenz übertragen.</p>
+    <p>Falls eine Quellen-Manifest-URL konfiguriert ist, wird das zuletzt erfolgreich geladene Manifest lokal gespeichert. Es enthält Quellen-IDs, Betreibernamen und öffentliche Hinweise, keine Nutzerkennungen. Eine erfolgreiche Aktualisierung ersetzt den bisherigen Stand. In PlanetaryLens 0.9 ist keine solche URL konfiguriert; die Datei wird daher weder angefragt noch gespeichert.</p>
+    <p>Cloud-Backup und Geräteübertragungs-Backup der App sind deaktiviert. Bilder, Videopuffer und Messdaten liegen im Arbeitsspeicher; es gibt keinen dauerhaften Mediencache. Das Schließen einer Ansicht gibt ihre Medien frei; Android verwaltet die endgültige Speicherbereinigung.</p>
+    <p>Einzelne Einträge entfernst du über den Stern, die gesamte Merkliste unter „Über PlanetaryLens“. Alle lokalen Daten entfernst du über Android-Einstellungen → Apps → PlanetaryLens → Speicher → Daten löschen oder durch Deinstallation. Dies löscht keine Anbieterprotokolle. Es gibt kein PlanetaryLens-Konto und keine serverseitige PlanetaryLens-Nutzerdatenbank.</p>
+
+    <h2>Quellensteuerung</h2>
+    <p>Bei konfigurierter Manifest-URL lädt die App beim Wechsel in den Vordergrund und dort etwa alle 15 Minuten eine kleine HTTPS-Datei. Sie kann Quellen entfernen und Hinweise anzeigen, aber keinen ausführbaren Code laden oder Quellen hinzufügen. Der Hoster erhielte die oben beschriebenen Verbindungsdaten. Ohne Netz gälte die letzte gültige Datei; eine sofortige Entfernung auf einem offline betriebenen Gerät ist nicht garantiert. PlanetaryLens 0.9 konfiguriert diese URL nicht.</p>
+    <p>Diese Erklärung ist in der App offline lesbar. Das Öffnen der öffentlichen Webfassung kontaktiert GitHub Pages über deinen Browser.</p>
+
+    <h2>Zwecke und Rechtsgrundlagen</h2>
+    <p>Lokale Einstellungen und Verbindungsdaten dienen den von dir aufgerufenen App-Funktionen (Art. 6 Abs. 1 lit. b DSGVO, soweit zur Bereitstellung des angeforderten Dienstes erforderlich). Sichere Auslieferung, Missbrauchsabwehr, Quellenabschaltung und Rechtebeschwerden dienen unserem berechtigten Interesse an einem zuverlässigen und rechtmäßigen Dienst (Art. 6 Abs. 1 lit. f DSGVO). Wir verwenden diese Daten nicht für Werbung oder Profilbildung. Unabhängige Betreiber bestimmen die Rechtsgrundlagen ihrer eigenen Verarbeitung; für ihre Serverprotokolle und Webseiten gelten ihre Erklärungen.</p>
+    <p>Wenn du uns per E-Mail kontaktierst, erhalten wir deine Adresse, Nachricht und freiwillig beigefügte Informationen. Wir nutzen diese zur Bearbeitung deiner Anfrage oder Rechtebeschwerde. Vertragsbezogene Anfragen beruhen auf Art. 6 Abs. 1 lit. b, sonstiger Support und Beschwerden auf lit. f sowie gesetzlich vorgeschriebene Unterlagen auf lit. c DSGVO. Bitte sende keine unnötigen sensiblen Daten. Korrespondenz wird gelöscht, sobald die Anfrage erledigt und die Speicherung nicht mehr erforderlich ist, sofern keine gesetzliche Aufbewahrungspflicht oder ein Rechtsstreit eine weitere Speicherung erfordert.</p>
+
+    <h2>Verarbeitung in anderen Ländern</h2>
+    <p>Direkte Abrufe können außerhalb deines Landes verarbeitet werden, unter anderem in den USA, Kanada und Neuseeland, einschließlich der dort eingesetzten Infrastruktur. Dort können andere Datenschutzregeln gelten. Diese Datenschutzerklärung wird von GitHub, Inc. in den Vereinigten Staaten bereitgestellt.</p>
+
+    <h2>Deine Rechte</h2>
+    <p>Unter den gesetzlichen Voraussetzungen kannst du Auskunft, Berichtigung, Löschung, Einschränkung und Datenübertragbarkeit verlangen. Du kannst einer Verarbeitung aufgrund berechtigter Interessen widersprechen und dich bei einer Datenschutzaufsichtsbehörde beschweren, insbesondere an deinem Wohn- oder Arbeitsort. Nutze dafür unseren Datenschutzkontakt oben. Wir benötigen keine zusätzlichen Identifikationsdaten allein, um einen Datensatz über dich anzulegen. Bei eigenständig verantworteten Daten eines Betreibers ist dessen Datenschutzkontakt zuständig; wir helfen dir bei der Zuordnung.</p>
+
+    <h2>Datenschutz für Kinder</h2>
+    <p>PlanetaryLens richtet sich an ein allgemeines Publikum mit Interesse an Erdbeobachtungen und nicht gezielt an Kinder. Es gibt weder Konto noch Werbung, Nutzeruploads, Chats oder Kommunikation zwischen Nutzern. Falls Minderjährige die App verwenden, gilt für ihre Nutzung dieselbe oben beschriebene Datenverarbeitung; es findet keine altersbezogene Profilerstellung statt. Wir treffen keine automatisierten Entscheidungen mit rechtlicher oder ähnlich erheblicher Wirkung.</p>
+    <p>Betreiberseiten und E-Mail-Links öffnen eine externe App. Für diese App und den Zieldienst gelten deren Datenschutzpraktiken.</p>
+
+    <h2>Änderungen</h2>
+    <p>Wenn sich Datenverarbeitung, Berechtigungen oder Netzwerkdienste ändern, wird diese Erklärung zusammen mit der App aktualisiert. Die Versionsangabe oben zeigt, für welchen Stand sie gilt.</p>
+
+    <h2>Hosting dieser Seite</h2>
+    <p>Diese statische Datenschutzerklärung wird über GitHub Pages, einen Dienst der GitHub, Inc., bereitgestellt. Beim Aufruf verarbeitet GitHub technisch notwendige Verbindungsdaten wie IP-Adresse, Zeitpunkt und Browserinformationen, um die Seite auszuliefern und abzusichern. PlanetaryLens setzt auf dieser Seite keine eigenen Cookies, keine Analysewerkzeuge, keine externen Schriften und keine externen Skripte ein. Weitere Informationen enthält die <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p>
+
+  </section>
+</main>
+</body>
+</html>
