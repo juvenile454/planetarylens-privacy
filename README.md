@@ -3,7 +3,7 @@
 Public, bilingual privacy policy for the Android app **PlanetaryLens** (`de.timo.planetarylens`).
 
 - Site: <https://juvenile454.github.io/planetarylens-privacy/>
-- Policy in `index.html`: **PlanetaryLens 0.9**, effective **16 September 2026**.
+- Policy in `index.html`: **PlanetaryLens 0.9 and 0.9.1**, effective **16 September 2026** for 0.9 and updated **25 September 2026** for 0.9.1.
 - Privacy and support contact: `PlanetaryLens@web.de`
 - App source code, signing material and user data are **not** part of this repository.
 
